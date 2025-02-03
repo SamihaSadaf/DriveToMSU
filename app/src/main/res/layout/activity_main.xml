@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:background="@drawable/map_background">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <!-- App Description Text -->
+    <TextView
+        android:id="@+id/app_description1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:text="Welcome to Drive To MSU"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/app_description2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This app helps you navigate by car from your current location to Montclair State University. Press the button below to see the route on Google Maps."
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_below="@id/app_description1"
+        android:layout_marginBottom="180dp"
+        android:paddingBottom="100dp"
+        />
+
+    <!-- Drive to MSU Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDriveToMSU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drive to MSU"
+        android:layout_below="@id/app_description2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="17dp"
+        android:textSize="20dp"
+         />
+
+
+
+</RelativeLayout>
